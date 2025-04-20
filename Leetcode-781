@@ -1,0 +1,39 @@
+//Very Trick and Intresting Question - *** Rabbits in Forest ***
+
+class Solution {
+    public int numRabbits(int[] answers) {
+        int ans = 0;
+        HashMap<Integer,Integer> map = new HashMap<>();
+
+        for(int num : answers)
+        {
+            map.put(num,map.getOrDefault(num,0)+1); // count of all rabbits colors
+        }
+        
+        //System.out.println(map);
+
+        for(Map.Entry<Integer,Integer> entry:map.entrySet())
+        {
+            if(entry.getKey()==0)
+            {
+                ans+=entry.getValue(); // if rabbit says only 0 , it means itself is the unique one ,, count it.
+            }
+            else
+            {
+                if(entry.getKey()+1<entry.getValue()){ // if rabbit says more than including it we should get how many are there in it i.e., using (%,/)
+                    int rem = entry.getValue()%(entry.getKey()+1); 
+                    int val = entry.getValue()/(entry.getKey()+1);   
+            
+                    ans+=(val*entry.getKey())+val;
+                    if(rem!=0) ans+=(entry.getKey()+1);
+                }
+                else
+                {
+                    ans+=entry.getKey()+1;
+                }
+            }
+        }
+
+        return ans;
+    }
+}
