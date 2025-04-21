@@ -6,7 +6,7 @@ A daily log of my journey through Data Structures and Algorithms.
        width="100%" height=10px" />
 </p>
 
-### 1.🐰 Rabbits in Forest
+### 1.🐰 Rabbits in Forest - Leetcode 781
 
 #### Problem Statement:
 In a forest, there are a number of rabbits, each of which can ask how many other rabbits are the same color as themselves. Each rabbit's answer can be one of the following:
