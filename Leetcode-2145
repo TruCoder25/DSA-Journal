@@ -1,0 +1,23 @@
+class Solution {
+    public int numberOfArrays(int[] differences, int lower, int upper) {
+        long sum = 0;
+        long minPrefix = 0, maxPrefix = 0;
+
+        // Calculate prefix sums and track the min/max values
+        for (int diff : differences) {
+            sum += diff;
+            minPrefix = Math.min(minPrefix, sum);
+            maxPrefix = Math.max(maxPrefix, sum);
+        }
+
+        // Calculate the valid range for the starting point (x)
+        long minStart = lower - minPrefix;
+        long maxStart = upper - maxPrefix;
+
+        // The number of valid starting points is the size of the range
+        long result = maxStart - minStart + 1;
+
+        // If the result is negative, no valid starting point exists, return 0
+        return (int)Math.max(0, result);
+    }
+}
