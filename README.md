@@ -40,3 +40,13 @@ Given Differences and length of tha array and lower bound and upper bound.
 ![Screenshot from 2025-04-21 07-28-35](https://github.com/user-attachments/assets/57b40e55-6f7a-4ea9-b01d-e246c118548f)
 
 <hr>
+
+### 3. Learned Fermat's Little Theorem
+
+### Statement of Fermat's Little Theorem:
+
+If `p` is a **prime number** and `a` is an integer such that `a` is **not divisible by p** (i.e., `a % p ≠ 0`), then the following equation holds:
+
+***a^(p - 2) mod p***
+
+<hr>
