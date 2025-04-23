@@ -50,3 +50,34 @@ If `p` is a **prime number** and `a` is an integer such that `a` is **not divisi
 ***a^(p - 2) mod p***
 
 <hr>
+
+### 4. Count Largest Group - Leetcode 1399 (Took 30 Mins to solve)
+
+### Problem Statement:
+
+CLEARCUT EXPLANATION !
+
+Example 1:
+
+Input: n = 13
+Output: 4
+Explanation: There are 9 groups in total, they are grouped according sum of its digits of numbers from 1 to 13:
+[1,10], [2,11], [3,12], [4,13], [5], [6], [7], [8], [9].
+There are 4 groups with largest size with containing members of same sum of digits: [1,10], [2,11], [3,12], [4,13].
+
+For [1,10] both 1 and 10 have same sum of digits 1.
+For [2,11] both 2 and 11 have same sum of digits 2.
+For [3,12] both 3 and 12 have same sum of digits 3.
+For [4,13] both 4 and 13 have same sum of digits 4.
+
+[5] has only one member have sum of digits 5.
+[6] has only one member have sum of digits 6.
+[7] has only one member have sum of digits 7.
+[8] has only one member have sum of digits 8.
+[9] has only one member have sum of digits 9.
+
+1st 4 groups have sizes 2, last 5 groups have sizes 1. So groups with largest size = 4
+
+Output: 4
+![Screenshot from 2025-04-23 06-25-55](https://github.com/user-attachments/assets/42543ea7-5d35-4bfd-b2ea-3deb8a4e7c03)
+<hr>
